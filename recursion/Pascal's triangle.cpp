@@ -48,3 +48,24 @@ public:
         
     }
 };
+
+/*
+efficient approach : using nCr
+
+ vector<int> getRow(int N)
+    {
+        // nC0 = 1
+        int prev = 1;
+        cout << prev;
+        elements.push_back(1);
+        for (int i = 1; i <= N; i++) {
+        
+            // nCr = (nCr-1 * (n - r + 1))/r
+            
+            int curr = (prev * (N - i + 1)) / i;
+            elements.push_back(curr);
+            prev = curr;
+        }
+        return elements;
+    }
+  */
