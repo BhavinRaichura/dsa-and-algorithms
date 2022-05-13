@@ -2,6 +2,11 @@
 //  Job Sequencing Problem 
 // https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
 
+error
+// Isme ek condition missed ho gayi hai
+// isme jo job me profit jyada hai vo job priority ke sath hogi but
+// agar kisi job ki deadline near hai aur us time pr koi aur job ki current deadline nahi hai to 
+// jiski deadline near hai use pahele complete kr sakta hu bhale uska profit km ho   
 
 
 
