@@ -68,3 +68,4 @@ void postOrderTravels(Node *root){
     cout<<root->data<<"    ";
 
 }
+
