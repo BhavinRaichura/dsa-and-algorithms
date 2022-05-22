@@ -21,6 +21,15 @@ Expected Time Complexity: O(|S|)
 Expected Auixilliary Space: O(|S|)
 
 */
+
+/*
+    cout<<'+'-'0'<<"    +: ";
+    cout<<'-'-'0'<<"    -: ";
+    cout<<'/'-'0'<<"    /: ";
+    cout<<'*'-'0'<<"    *: ";
+    cout<<'^'-'0'<<"    ^: ";
+     
+*/
 class Solution
 {
     public:
