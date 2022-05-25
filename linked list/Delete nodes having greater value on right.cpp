@@ -21,7 +21,7 @@ The task is to complete the function compute() which should modify the list as r
 Expected Time Complexity: O(N)
 Expected Auxiliary Space: O(1)
   */
-
+// ----------------------------------------------------------method 1 --- using recurssion
 class Solution
 {
     public:
@@ -35,4 +35,34 @@ class Solution
     }
     
 };
-   
+ 
+// ----------------------------------------------------method 2 --- using stack
+class Solution
+{
+    public:
+    Node *compute(Node *head)
+    {
+        if(head==NULL || head->next==NULL) return head;
+        
+        stack<Node*>st;
+        Node * temp=head;
+        
+        while(temp!=NULL){
+            while(!st.empty() && st.top()->data < temp->data){
+                st.pop();
+            }
+            st.push(temp);
+            temp =temp->next;
+        }
+        
+        temp=NULL;
+        while(!st.empty()){
+            st.top()->next =temp;
+            temp = st.top();
+            st.pop();
+        }
+        return temp;
+        
+    }
+    
+};
