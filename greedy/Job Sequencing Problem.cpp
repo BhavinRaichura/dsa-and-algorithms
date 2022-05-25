@@ -2,13 +2,38 @@
 //  Job Sequencing Problem 
 // https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
 
+---------------------------------------error is solved-------------------------------------------
+
 error
 // Isme ek condition missed ho gayi hai
 // isme jo job me profit jyada hai vo job priority ke sath hogi but
 // agar kisi job ki deadline near hai aur us time pr koi aur job ki current deadline nahi hai to 
 // jiski deadline near hai use pahele complete kr sakta hu bhale uska profit km ho   
 
-//------------------------------------------------method 1 ---using sort according to sorting function sort(dead-line, and profit)
+
+// ---------------------------------------error is solved
+/*
+Given a set of N jobs where each jobi has a deadline and profit associated with it.
+Each job takes 1 unit of time to complete and only one job can be scheduled at a time. We earn the profit associated with job if and only if the job is completed by its deadline.
+Find the number of jobs done and the maximum profit.
+Note: Jobs will be given in the form (Jobid, Deadline, Profit) associated with that Job.
+
+Example 1:
+Input:
+N = 4
+Jobs = {(1,4,20),(2,1,10),(3,1,40),(4,1,30)}
+Output:
+2 60
+Explanation: Job1 and Job3 can be done with maximum profit of 60 (20+40).
+
+Your Task :
+You don't need to read input or print anything. Your task is to complete the function JobScheduling() which takes an integer N and an array of Jobs(Job id, Deadline, Profit) as input and returns the count of jobs and maximum profit.
+
+Expected Time Complexity: O(NlogN)
+Expected Auxilliary Space: O(N)
+*/
+    
+------------------------------------------------method 1 ---using sort according to sorting function sort(dead-line, and profit)--------------------
 
 class Solution 
 {
@@ -43,7 +68,7 @@ class Solution
 
 };
 
-//---------------------------------------------------------------------method 2 -- normal sorting
+---------------------------------------------------------------------method 2 -- normal sorting-------------------------------------
 class Solution 
 {
     public:
