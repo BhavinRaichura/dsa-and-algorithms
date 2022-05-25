@@ -8,9 +8,42 @@ error
 // agar kisi job ki deadline near hai aur us time pr koi aur job ki current deadline nahi hai to 
 // jiski deadline near hai use pahele complete kr sakta hu bhale uska profit km ho   
 
+class Solution 
+{
+    public:
+    //Function to find the maximum profit and the number of jobs done.
+    vector<int> JobScheduling(Job arr[], int n)
+    {
+        // soring me function laga kr dead-line and profit ke base pr sort krna hai 
+        sort(arr,arr+n,[](Job j1,Job j2){
+            if(j1.dead==j2.dead) return j1.profit > j2.profit;
+            return j1.dead<j2.dead;
+        });
+        
+        priority_queue<int,vector<int>,greater<int>>q;
+        for (int i=0;i<n;i++){
+            if(arr[i].dead> q.size()){
+                q.push(arr[i].profit);
+            }
+            else if(q.top()< arr[i].profit){
+                q.pop();
+                q.push(arr[i].profit);
+            }
+        }
+        int cnt = 0, profit = 0;
+        while (!q.empty()) {
+            cnt++;
+            profit += q.top();
+            q.pop();
+        }
+        return {cnt, profit};
+    }
 
+};
 
+/*
 
+//------------------------------------------- practice kia tha kuchh errors hai  
 class Solution 
 {
     public:
@@ -58,4 +91,4 @@ class Solution
 
     }
 };
-
+*/
