@@ -20,7 +20,7 @@ Note:The generatedoutput is 1 if the string is successfully rearranged and is 0 
  
 Expected Time Complexity : O(NlogN), N = length of String
 Expected Auxiliary Space : O(number of english alphabets)
-  */
+ */
 
 #include<bits/stdc++.h>
 using namespace std;
