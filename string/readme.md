@@ -17,3 +17,7 @@
 
 ## stack
 [1. Longest Valid substring Length](https://github.com/BhavinRaichura/algo/blob/main/stack/Valid%20Substring.cpp)
+
+
+## Greedy
+[1. Rearrange characters](https://github.com/BhavinRaichura/algo/blob/main/greedy/Rearrange%20characters.cpp)
