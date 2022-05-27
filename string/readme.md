@@ -8,6 +8,7 @@
 ## next_permutation
     to find the next permutation of given string 
         next_permutation(str.begin(),str.end())
+        
     it will change string to next permutation
         is_permutation(str1.begin(),str1.end(),str2.begin())
         prev_permutation(str.begin(),str.end())
