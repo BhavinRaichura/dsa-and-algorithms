@@ -11,3 +11,8 @@
     it will change string to next permutation
         is_permutation(str1.begin(),str1.end(),str2.begin())
         prev_permutation(str.begin(),str.end())
+
+# Questions 
+
+## stack
+[1. Longest Valid substring Length](https://github.com/BhavinRaichura/algo/blob/main/stack/Valid%20Substring.cpp)
