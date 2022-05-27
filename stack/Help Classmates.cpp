@@ -27,6 +27,7 @@ Expected Auxiliary Space: O(N)
   
  */
 //---------------------------------------------------------method -1 
+
 //---------------------------------------------------------brought force appreach - using 2 for loop: o(n^2)
 
 class Solution{
@@ -52,5 +53,35 @@ class Solution{
         return arr;
     } 
 };
+
+
 //------------------------------------------------------------method -2 
+
 // -----------------------------------------------------------using stack o(n)
+class Solution{
+    
+    public:
+    vector<int> help_classmate(vector<int> arr, int n) 
+    { 
+        // Your code goes here
+        stack<int>s;
+        vector<int>ans(n);
+        
+        for(int i=n-1;i>=0;i--){
+            while(!s.empty() && s.top()>=arr[i]){
+                s.pop();
+            }
+            
+            if(s.empty()){
+                ans[i]=-1;
+            }
+            else{
+                ans[i] = s.top();
+            }
+            s.push(arr[i]);
+                
+        }
+        
+        return ans;
+    } 
+};
