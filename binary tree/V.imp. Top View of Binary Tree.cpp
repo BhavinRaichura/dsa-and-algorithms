@@ -61,6 +61,7 @@ class Solution
         
         q.push({hd,root});
         
+        // loop for level order traversal
         while (!q.empty()){
             
             // for level order traversal BFS
