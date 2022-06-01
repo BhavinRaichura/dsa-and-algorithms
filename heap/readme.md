@@ -21,7 +21,10 @@
     // delete 1 element = log(n) time
 
 ### questions
-\n[convert min heap to max heap](https://www.geeksforgeeks.org/convert-min-heap-to-max-heap/)
-\n[convert BST to min heap](https://www.geeksforgeeks.org/convert-bst-min-heap/)
+
+[convert min heap to max heap](https://www.geeksforgeeks.org/convert-min-heap-to-max-heap/)
+
+[convert BST to min heap](https://www.geeksforgeeks.org/convert-bst-min-heap/)
+
 [chech Binary Tree is Heap or not](https://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-heap/)
 
