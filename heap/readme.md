@@ -20,4 +20,8 @@
     // insert 1 element = log(n) time
     // delete 1 element = log(n) time
 
+#### questions
+[convert min heap to max heap](https://www.geeksforgeeks.org/convert-min-heap-to-max-heap/)
+
+[BST to min heap](https://www.geeksforgeeks.org/convert-bst-min-heap/)
 
