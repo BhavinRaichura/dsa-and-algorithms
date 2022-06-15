@@ -28,6 +28,7 @@ public:
 
 //------------------------------------------------------------------------------backtracking solutionn--------------------------------------------------------
     // backtracking
+    // tc o(2^(n*m))
     
     bool isSafe(int r, int c,int n,int m,vector<vector<int>>& arr ){
         if(r>=n|| c>=m || arr[r][c]==1) 
@@ -57,7 +58,8 @@ public:
     }
     
  //---------------------------------------------------------------------------------DP Solution------------------------------------------------------
-    // dp - memoization
+    // dp - tabulation
+    // tc o(n*m)
     
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid){
 
@@ -83,10 +85,10 @@ public:
                 }
                 
                 // iterative cases
-                if(j>=1){
+                if(j>0){
                     left+= dp[i][j-1];
                 }
-                if(i>=1){
+                if(i>0){
                     up +=dp[i-1][j];
                 }
                 
