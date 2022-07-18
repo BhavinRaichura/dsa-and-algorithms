@@ -20,8 +20,8 @@
     // insert 1 element = log(n) time
     // delete 1 element = log(n) time
 
-### questions
-## BTS to min-heap and max-heap
+## questions
+### BTS to min-heap and max-heap
 given BST se array me data collect in-order me data collect karenge and for
 [1. BTS to max heap](https://github.com/BhavinRaichura/algo/blob/main/binary%20search%20tree/BST%20to%20max%20heap.cpp)
  ke liye data ko post-order traversal se put krte jayenge
