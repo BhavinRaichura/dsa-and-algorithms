@@ -21,12 +21,12 @@
     // delete 1 element = log(n) time
 
 ### questions
-
+## BTS to min-heap and max-heap
 given BST se array me data collect in-order me data collect karenge and for
 [1. BTS to max heap](https://github.com/BhavinRaichura/algo/blob/main/binary%20search%20tree/BST%20to%20max%20heap.cpp)
-BST to max heap ke liye data ko post-order traversal se put krte jayenge
+ ke liye data ko post-order traversal se put krte jayenge
 [2. convert BST to min heap](https://www.geeksforgeeks.org/convert-bst-min-heap/)
-BST to min heap ke liye data ko pre-order traversal se put krte jayenge
+ ke liye data ko pre-order traversal se put krte jayenge
 
 
 [convert min heap to max heap](https://www.geeksforgeeks.org/convert-min-heap-to-max-heap/)
