@@ -1,4 +1,4 @@
-### Deque questions 
+## Deque questions 
 
     # Deque: type of queue data structure where we can perform queue operations from both side.
     # from front:  push_back(),  pop_front(), front();
