@@ -10,4 +10,6 @@
 
 [5. two pointer appreach]()
 
+[6. Sieve of Eratosthenes || All prime numbers of given range O(n (log(log n)))]()
+
 
