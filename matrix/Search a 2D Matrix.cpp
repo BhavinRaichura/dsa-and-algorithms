@@ -17,23 +17,25 @@ Example 2:
 
       
 */
-class Solution {
-public:
-    bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        int n = matrix[0].size();
-        for (int i =0;i<matrix.size();i++){
-            if(matrix[i][n-1]>=target){
-                int j =0;
-                while(j<n){
-                    if(matrix[i][j]==target)
-                        return true;
-                    j++;
-                }
-                break;
+class Solution
+{
+    public:
+    //Function to search a given number in row-column sorted matrix.
+    bool search(vector<vector<int> > matrix, int n, int m, int x) 
+    {
+        // code here 
+        
+        int i=0 , j= m-1;
+        while(i<n and j>=0){
+            if(matrix[i][j]==x)
+                return 1;
+            else if(matrix[i][j]<x){
+                i++;
+            }
+            else{
+                j--;
             }
         }
-        return false;
+        return 0;
     }
 };
-
-
