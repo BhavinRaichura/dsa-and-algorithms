@@ -79,8 +79,7 @@ class Solution
             else{
                 low=mid+1;
             }
-            
-            
+
         }
         
         return ans;
